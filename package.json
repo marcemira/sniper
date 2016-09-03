@@ -1,0 +1,37 @@
+{
+  "name": "sniper",
+  "version": "0.0.1",
+  "description": "A project aimed to \"scrape\" sites every x amount of time and send notification upon matching certain configurable profile of information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcemira/sniper.git"
+  },
+  "keywords": [
+    "scrape",
+    "crawler",
+    "keywords",
+    "configurable"
+  ],
+  "author": "Marcelo Mira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcemira/sniper/issues"
+  },
+  "homepage": "https://github.com/marcemira/sniper#readme",
+  "dependencies": {
+    "app-settings": "^1.0.0",
+    "handlebars": "^4.0.5",
+    "install": "^0.8.1",
+    "mailcomposer": "^3.10.0",
+    "mailgun-js": "^0.7.12",
+    "moment": "^2.14.1",
+    "node-persist": "^2.0.2",
+    "npm": "^3.10.6",
+    "scrape": "^0.2.3",
+    "shorthash": "0.0.2"
+  }
+}

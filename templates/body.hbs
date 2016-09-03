@@ -1,0 +1,26 @@
+<h1>Nuevos avisos!</h1>
+
+<ul class="items" style="list-style: none; width: 100%; max-width: 800px; margin: 0">
+{{#each items as |item|}}
+  <li class="item" style="border-bottom: 1px solid #CCC; margin-bottom: 30px;">
+    <a href="{{link}}" style="color: #464646; text-decoration: none;">
+      <table cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+          <tr>
+            <td style="padding: 5px; width: 150px; max-width: 150px;" align="center" valign="middle">
+              <img src="{{src}}" style="max-width: 150px;">
+            </td>
+            <td style="padding: 5px" align="left" valign="top">
+              <h3 style="margin: 0; margin-bottom: 25px;">{{title}}</h3>
+              <p>{{desc}}</p>
+              <p style="border-top: 1px dotted #CCC; padding-top: 7px; margin-bottom: 0;">{{date}}</p>
+            </td>
+            <td style="padding: 5px; width: 100px; max-width: 100px; border-left: 1px dotted #CCC" align="center" valign="middle"><b>{{price}}</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </a>
+  </li>
+{{/each}}
+</ul>
+

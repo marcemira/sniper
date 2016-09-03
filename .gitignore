@@ -1,0 +1,6 @@
+/nbproject/*
+/.node-persist/*
+/.idea/*
+/nbproject/*
+/node_modules/*
+settings.json
