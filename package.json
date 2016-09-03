@@ -33,5 +33,6 @@
     "npm": "^3.10.6",
     "scrape": "^0.2.3",
     "shorthash": "0.0.2"
-  }
+  },
+  "devDependencies": {}
 }
