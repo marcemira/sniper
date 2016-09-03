@@ -38,8 +38,10 @@ var doRequests = new Promise( ( resolve, reject ) => {
             title: box.find('.Info .Modelo h3 a').first().text,
             desc:  box.find('.Descripcion p').first().text,
             price: box.find('.Info .Left .cifra').first().text,
-            date:  box.find('.pie-aviso-teaser').first().text
+            date:  box.find('.pie-aviso-teaser').first().text,
           };
+
+          data.momentDate = moment(data.date.replace('Publicado: ', ''), 'DD.MM.YYYY');
 
           var id = sh.unique(data.title);
 
@@ -66,6 +68,10 @@ var doRequests = new Promise( ( resolve, reject ) => {
 
 doRequests.then(() => {
   if(toNotify.length){
+
+    toNotify = toNotify.sort( (a, b) => {
+      return b.momentDate - a.momentDate;
+    });
 
     // Prepare and compile email html
     var template = handlebars.compile(emailBody);
