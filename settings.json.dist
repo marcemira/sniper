@@ -1,0 +1,13 @@
+{
+    "mailgun": {
+        "appKey"  : "key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "domain"  : "some-domain.mailgun.org",
+        "from"    : "Sniper <head-shot@sniper.js>",
+        "to"      : "your_email@asd.com",
+        "subject" : "A subject"
+    },
+
+    "urls": [
+      "pick-a-url.com"
+    ]
+}
