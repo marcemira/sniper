@@ -38,7 +38,7 @@ module.exports = toNotify => {
             storage.getItem(id).then(value => {
               if(!value){
                 toNotify.push(data);
-                toProcess.push(storage.setItem(id, null));
+                toProcess.push(storage.setItem(id, data));
               }
             });
 

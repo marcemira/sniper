@@ -1,6 +1,7 @@
 /* jshint esversion: 6 */
 const fs = require('fs'),
       storage = require('node-persist'),
+      moment = require('moment'),
       settings = require("app-settings"),
       handlebars = require('handlebars'),
       mailcomposer = require('mailcomposer'),
@@ -25,7 +26,7 @@ module.exports = toNotify => {
   var mail = mailcomposer({
     from: settings.mailgun.from,
     to: settings.mailgun.to,
-    subject: settings.mailgun.subject,
+    subject: settings.mailgun.subject + moment().format(),
     body: 'Nuevos avisos!',
     html
   });
