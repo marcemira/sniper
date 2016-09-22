@@ -26,10 +26,11 @@
     "app-settings": "^1.0.0",
     "handlebars": "^4.0.5",
     "install": "^0.8.1",
+    "jsonlint": "^1.6.2",
     "mailcomposer": "^3.10.0",
     "mailgun-js": "^0.7.12",
     "moment": "^2.14.1",
-    "node-persist": "^2.0.2",
+    "node-persist": "git+https://github.com/simonlast/node-persist.git#e105cabb7f213d684391e882aab0040f3e2ccad5",
     "npm": "^3.10.6",
     "scrape": "^0.2.3",
     "shorthash": "0.0.2"

@@ -1,9 +1,16 @@
 /* jshint esversion: 6 */
 const notifier = require('./notifier.js'),
+      settings = require("app-settings"),
+      validate = require("./validate"),
       storage  = require('node-persist'),
       toNotify = [];
 
-storage.init();
+validate();
+
+storage.init({
+  dir: settings.storage.dir,
+  logging: settings.storage.logging
+});
 
 doRequests = [
   require('./processors/lavoz.js')(toNotify),
